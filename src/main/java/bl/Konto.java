@@ -25,4 +25,10 @@ public class Konto {
 
     }
 
+    public void transferTo(Konto k, int amount) {
+        this.withdraw(amount);
+        k.deposit(amount);
+
+    }
+
 }
